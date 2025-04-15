@@ -37,3 +37,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### lod ###
+/group-buying-app/data/log/log_error.log
+/group-buying-app/data/log/log_info.log
