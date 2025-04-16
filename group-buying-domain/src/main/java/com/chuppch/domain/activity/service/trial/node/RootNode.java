@@ -33,7 +33,7 @@ public class RootNode extends AbstractGroupBuyMarketSupport<MarketProductEntity,
         //参数判断
         if (StringUtils.isBlank(requestParameter.getChannel()) || StringUtils.isBlank(requestParameter.getSource()) ||
                 StringUtils.isBlank(requestParameter.getGoodsId()) || StringUtils.isBlank(requestParameter.getUserId())){
-            throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(),ResponseCode.ILLEGAL_PARAMETER.getInfo());//TODO 思考这里怎么实现
+            throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(),ResponseCode.ILLEGAL_PARAMETER.getInfo());
         }
         return router(requestParameter,dynamicContext);
     }
