@@ -7,6 +7,11 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
+/**
+ * @author chuppch
+ * @description 拼团活动
+ * @create 2025-4-18
+ */
 @Data
 @Builder
 @AllArgsConstructor
@@ -25,18 +30,6 @@ public class GroupBuyActivity {
      * 活动名称
      */
     private String activityName;
-    /**
-     * 来源
-     */
-    private String source;
-    /**
-     * 渠道
-     */
-    private String channel;
-    /**
-     * 商品ID
-     */
-    private String goodsId;
     /**
      * 折扣ID
      */
