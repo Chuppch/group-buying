@@ -32,7 +32,6 @@ public class DefaultActivityStrategyFactory {
         return rootNode;
     }
 
-
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
