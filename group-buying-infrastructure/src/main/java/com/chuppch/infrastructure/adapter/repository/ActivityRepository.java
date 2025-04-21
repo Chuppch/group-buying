@@ -15,7 +15,6 @@ import com.chuppch.infrastructure.dao.po.SCSkuActivity;
 import com.chuppch.infrastructure.dao.po.Sku;
 import com.chuppch.infrastructure.redis.RedissonService;
 import org.redisson.api.RBitSet;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
