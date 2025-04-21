@@ -20,7 +20,7 @@ public class TagService implements ITagService{
     public void execTagBatchJob(String tagId, String batchId) {
 
         //1.查询批次任务
-        CrowdTagsJobEntity crowdTagsJobEntity = repository.queryCrowdTagsJobEntity(tagId, batchId);
+        CrowdTagsJobEntity crowdTagsJobEntity = repository.queryCrowdTagsJobEntity(tagId, batchId);//只是稍作查询 暂时无任何真实意义
 
         //2.采集用户数据 - 这部分需要采集用户的消费数据，后续有用户发起拼单后再处理
 

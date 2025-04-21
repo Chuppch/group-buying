@@ -12,6 +12,7 @@ import com.chuppch.infrastructure.dao.po.CrowdTagsJob;
 import com.chuppch.infrastructure.redis.IRedisService;
 import com.chuppch.infrastructure.redis.RedissonService;
 import org.redisson.api.RBitSet;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Repository;
 
@@ -57,7 +58,7 @@ public class TagRepository implements ITagRepository {
             crowdTagsDetailDao.addCrowdTagsUserId(crowdTagsDetailReq);
 
             //获取BitSet
-            RBitSet bitSet = redisService.getBitSet(tagId);
+            RBitSet bitSet = redisService.getBitSet(tagId); //TODO 为什么这里进不去
             bitSet.set(redisService.getIndexFromUserId(userId), true);
 
         }catch (DuplicateKeyException ignore){
