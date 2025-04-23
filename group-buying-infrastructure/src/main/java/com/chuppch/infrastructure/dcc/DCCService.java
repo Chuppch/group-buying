@@ -25,7 +25,7 @@ public class DCCService {
 
     public boolean isCutRange(String userId) {
         // 计算哈希码的绝对值
-        int hashCode = Math.abs(userId.hashCode());//TODO 去debug  看看这部分怎么跑
+        int hashCode = Math.abs(userId.hashCode());
 
         // 获取最后两位
         int lastTwoDigits = hashCode % 100;
