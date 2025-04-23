@@ -13,6 +13,7 @@ import com.chuppch.infrastructure.dao.po.GroupBuyActivity;
 import com.chuppch.infrastructure.dao.po.GroupBuyDiscount;
 import com.chuppch.infrastructure.dao.po.SCSkuActivity;
 import com.chuppch.infrastructure.dao.po.Sku;
+import com.chuppch.infrastructure.dcc.DCCService;
 import com.chuppch.infrastructure.redis.RedissonService;
 import org.redisson.api.RBitSet;
 import org.springframework.stereotype.Repository;
@@ -41,6 +42,9 @@ public class ActivityRepository implements IActivityRepository {
 
     @Resource
     private RedissonService redissonService;
+
+    @Resource
+    private DCCService dccService;
 
     @Override
     public GroupBuyActivityDiscountVO queryGroupBuyActivityDiscountVO(Long activityId) {
@@ -113,5 +117,15 @@ public class ActivityRepository implements IActivityRepository {
         if (!bitSet.isExists()) return true;
         //判断用户是否存在于人群
         return bitSet.get(redissonService.getIndexFromUserId(userId));//这段代码中的方法的作用是判断某个用户是否属于某个标签（tagId）所定义的人群范围。
+    }
+
+    @Override
+    public boolean downgradeSwitch() {
+        return dccService.isDowngradeSwitch();
+    }
+
+    @Override
+    public boolean cutRange(String userId) {
+        return dccService.isCutRange(userId);
     }
 }

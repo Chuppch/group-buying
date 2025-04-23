@@ -26,7 +26,11 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson-spring-boot-starter</artifactId>
+        </dependency>
+        
         <!-- 系统模块 -->
         <dependency>
             <groupId>com.chuppch</groupId>
@@ -39,6 +43,10 @@
         <dependency>
             <groupId>com.chuppch</groupId>
             <artifactId>group-buying-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.chuppch</groupId>
+            <artifactId>group-buying-infrastructure</artifactId>
         </dependency>
     </dependencies>
 

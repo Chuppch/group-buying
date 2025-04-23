@@ -6,6 +6,7 @@ import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;
 import io.netty.buffer.ByteBufInputStream;
 import io.netty.buffer.ByteBufOutputStream;
+import lombok.extern.slf4j.Slf4j;
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
 import org.redisson.client.codec.BaseCodec;
@@ -27,10 +28,12 @@ import java.io.IOException;
  */
 @Configuration
 @EnableConfigurationProperties(RedisClientConfigProperties.class)
+@Slf4j //TODO
 public class RedisClientConfig {
 
     @Bean("redissonClient")
     public RedissonClient redissonClient(ConfigurableApplicationContext applicationContext, RedisClientConfigProperties properties) {
+        log.info("初始化 RedissonClient，连接 Redis: {}:{}", properties.getHost(), properties.getPort()); //TODO
         Config config = new Config();
         // 根据需要可以设定编解码器；https://github.com/redisson/redisson/wiki/4.-%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97%E5%8C%96
         config.setCodec(JsonJacksonCodec.INSTANCE);
