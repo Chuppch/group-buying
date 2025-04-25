@@ -104,7 +104,7 @@ public class TradeRepository implements ITradeRepository {
                 .build();
         try {
             // 写入拼团记录
-            groupBuyOrderListDao.insert(groupBuyOrderListReq);//TODO
+            groupBuyOrderListDao.insert(groupBuyOrderListReq);
         } catch (DuplicateKeyException e) {
             throw new AppException(ResponseCode.INDEX_EXCEPTION);
         }
