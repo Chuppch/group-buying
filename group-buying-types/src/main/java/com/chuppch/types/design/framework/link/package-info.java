@@ -1,1 +1,0 @@
-package com.chuppch.types.design.framework.link;
