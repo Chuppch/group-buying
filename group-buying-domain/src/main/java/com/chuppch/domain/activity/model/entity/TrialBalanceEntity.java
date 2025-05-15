@@ -21,8 +21,10 @@ public class TrialBalanceEntity {
     private String goodsName;
     /** 原始价格 */
     private BigDecimal originalPrice;
-    /** 折扣价格 */
+    /** 折扣金额 */
     private BigDecimal deductionPrice;
+    /** 支付金额 */
+    private BigDecimal payPrice;
     /** 拼团目标数量 */
     private Integer targetCount;
     /** 拼团开始时间 */

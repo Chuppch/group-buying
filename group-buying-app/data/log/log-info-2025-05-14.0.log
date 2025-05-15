@@ -1,0 +1,88 @@
+25-05-14.00:19:10.399 [main            ] INFO  Link02Test             - Starting Link02Test using Java 17.0.12 on xiaoheng with PID 26632 (started by 73272 in D:\MyTempCode\group_buy_market\group-buying\group-buying-app)
+25-05-14.00:19:10.400 [main            ] INFO  Link02Test             - The following 1 profile is active: "dev"
+25-05-14.00:19:11.368 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-05-14.00:19:11.371 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-05-14.00:19:11.425 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
+25-05-14.00:19:11.782 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.chuppch.config.RedisClientConfig$$EnhancerBySpringCGLIB$$483c06af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-05-14.00:19:12.048 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.chuppch.config.RedisClientConfigProperties' of type [com.chuppch.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-05-14.00:19:12.276 [main            ] INFO  Version                - Redisson 3.26.0
+25-05-14.00:19:12.567 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 172.28.76.198/172.28.76.198:16379
+25-05-14.00:19:12.595 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 172.28.76.198/172.28.76.198:16379
+25-05-14.00:19:12.644 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-05-14.00:19:14.931 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-05-14.00:19:14.981 [main            ] INFO  Link02Test             - Started Link02Test in 4.971 seconds (JVM running for 5.88)
+25-05-14.00:19:15.490 [main            ] INFO  RuleLogic201           - link model02 RuleLogic201
+25-05-14.00:19:15.490 [main            ] INFO  RuleLogic202           - link model02 RuleLogic202
+25-05-14.00:19:15.686 [main            ] INFO  Link02Test             - 测试结果:{"age":"hi chuppch！"}
+25-05-14.00:28:10.164 [main            ] INFO  Link01Test             - Starting Link01Test using Java 17.0.12 on xiaoheng with PID 26432 (started by 73272 in D:\MyTempCode\group_buy_market\group-buying\group-buying-app)
+25-05-14.00:28:10.165 [main            ] INFO  Link01Test             - The following 1 profile is active: "dev"
+25-05-14.00:28:10.963 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-05-14.00:28:10.967 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-05-14.00:28:11.021 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
+25-05-14.00:28:11.342 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.chuppch.config.RedisClientConfig$$EnhancerBySpringCGLIB$$daf9fd6c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-05-14.00:28:11.596 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.chuppch.config.RedisClientConfigProperties' of type [com.chuppch.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-05-14.00:28:11.815 [main            ] INFO  Version                - Redisson 3.26.0
+25-05-14.00:28:12.099 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 172.28.76.198/172.28.76.198:16379
+25-05-14.00:28:12.122 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 172.28.76.198/172.28.76.198:16379
+25-05-14.00:28:12.170 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-05-14.00:28:14.396 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-05-14.00:28:14.489 [main            ] INFO  Link01Test             - Started Link01Test in 4.717 seconds (JVM running for 5.557)
+25-05-14.00:28:14.560 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4681c175] to prepare test instance [com.chuppch.test.types.Link01Test@144dc2f7]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.chuppch.test.types.Link01Test': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.chuppch.test.types.rule01.factory.Rule01TradeRuleFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup="", name="", description="", authenticationType=CONTAINER, type=java.lang.Object.class, mappedName="")}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:417)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.chuppch.test.types.rule01.factory.Rule01TradeRuleFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup="", name="", description="", authenticationType=CONTAINER, type=java.lang.Object.class, mappedName="")}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 29 common frames omitted
+25-05-14.00:28:45.472 [main            ] INFO  Link01Test             - Starting Link01Test using Java 17.0.12 on xiaoheng with PID 28020 (started by 73272 in D:\MyTempCode\group_buy_market\group-buying\group-buying-app)
+25-05-14.00:28:45.475 [main            ] INFO  Link01Test             - The following 1 profile is active: "dev"
+25-05-14.00:28:46.301 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-05-14.00:28:46.304 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-05-14.00:28:46.351 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
+25-05-14.00:28:46.654 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.chuppch.config.RedisClientConfig$$EnhancerBySpringCGLIB$$a93b8d28] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-05-14.00:28:46.927 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.chuppch.config.RedisClientConfigProperties' of type [com.chuppch.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-05-14.00:28:47.128 [main            ] INFO  Version                - Redisson 3.26.0
+25-05-14.00:28:47.390 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 172.28.76.198/172.28.76.198:16379
+25-05-14.00:28:47.408 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 172.28.76.198/172.28.76.198:16379
+25-05-14.00:28:47.445 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-05-14.00:28:49.312 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-05-14.00:28:49.362 [main            ] INFO  Link01Test             - Started Link01Test in 4.307 seconds (JVM running for 5.222)
+25-05-14.00:28:49.771 [main            ] INFO  RuleLogic101           - link model01 RuleLogic101
+25-05-14.00:28:49.771 [main            ] INFO  RuleLogic102           - link model01 RuleLogic102
+25-05-14.00:28:49.883 [main            ] INFO  Link01Test             - 测试结果:"link model01 单实例链"
