@@ -1,7 +1,6 @@
 package com.chuppch.test.domaiin.trade;
 
 
-
 import com.alibaba.fastjson.JSON;
 import com.chuppch.domain.activity.model.entity.MarketProductEntity;
 import com.chuppch.domain.activity.model.entity.TrialBalanceEntity;
@@ -11,7 +10,7 @@ import com.chuppch.domain.trade.model.entity.MarketPayOrderEntity;
 import com.chuppch.domain.trade.model.entity.PayActivityEntity;
 import com.chuppch.domain.trade.model.entity.PayDiscountEntity;
 import com.chuppch.domain.trade.model.entity.UserEntity;
-import com.chuppch.domain.trade.service.ITradeOrderService;
+import com.chuppch.domain.trade.service.ITradeLockOrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,20 +20,20 @@ import org.springframework.test.context.junit4.SpringRunner;
 import javax.annotation.Resource;
 
 /**
- * @author Fuzhengwei bugstack.cn @小傅哥
+ * @author chuppch
  * @description 交易订单服务测试
- * @create 2025-01-11 11:52
+ * @create 2025-05-16
  */
 @Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ITradeOrderServiceTest {
+public class ITradeLockOrderServiceTest {
 
     @Resource
     private IIndexGroupBuyMarketService indexGroupBuyMarketService;
 
     @Resource
-    private ITradeOrderService tradeOrderService;
+    private ITradeLockOrderService tradeOrderService;
 
     @Test
     public void test_lockMarketPayOrder() throws Exception {

@@ -1,10 +1,10 @@
-package com.chuppch.domain.trade.service.filter;
+package com.chuppch.domain.trade.service.lock.filter;
 
 import com.chuppch.domain.trade.adapter.repository.ITradeRepository;
 import com.chuppch.domain.trade.model.entity.GroupBuyActivityEntity;
 import com.chuppch.domain.trade.model.entity.TradeRuleCommandEntity;
 import com.chuppch.domain.trade.model.entity.TradeRuleFilterBackEntity;
-import com.chuppch.domain.trade.service.factory.TradeRuleFilterFactory;
+import com.chuppch.domain.trade.service.lock.factory.TradeLockRuleFilterFactory;
 import com.chuppch.types.design.framework.link.model2.handler.ILogicHandler;
 import com.chuppch.types.enums.ResponseCode;
 import com.chuppch.types.exception.AppException;
@@ -20,13 +20,13 @@ import javax.annotation.Resource;
  */
 @Slf4j
 @Service
-public class UserTakeLimitRuleFilter implements ILogicHandler<TradeRuleCommandEntity, TradeRuleFilterFactory.DynamicContext, TradeRuleFilterBackEntity> {
+public class UserTakeLimitRuleFilter implements ILogicHandler<TradeRuleCommandEntity, TradeLockRuleFilterFactory.DynamicContext, TradeRuleFilterBackEntity> {
 
     @Resource
     private ITradeRepository repository;
 
     @Override
-    public TradeRuleFilterBackEntity apply(TradeRuleCommandEntity requestParameter, TradeRuleFilterFactory.DynamicContext dynamicContext) throws Exception {
+    public TradeRuleFilterBackEntity apply(TradeRuleCommandEntity requestParameter, TradeLockRuleFilterFactory.DynamicContext dynamicContext) throws Exception {
         log.info("交易规则过滤-用户参与次数校验{} activityId:{}", requestParameter.getUserId(), requestParameter.getActivityId());
 
         GroupBuyActivityEntity groupBuyActivity = dynamicContext.getGroupBuyActivity();

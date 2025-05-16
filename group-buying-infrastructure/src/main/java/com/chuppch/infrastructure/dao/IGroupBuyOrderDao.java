@@ -14,4 +14,9 @@ public interface IGroupBuyOrderDao {
 
     GroupBuyOrder queryGroupBuyProgress(String teamId);// 根据teamId查询团购进度
 
+    GroupBuyOrder queryGroupBuyTeamByTeamId(String teamId);//根据团队ID查询团购订单信息。
+
+    int updateAddCompleteCount(String teamId); // 根据团队ID更新增加已完成的数量。
+
+    int updateOrderStatus2COMPLETE(String teamId); // 根据团队ID将订单状态更新为已完成
 }

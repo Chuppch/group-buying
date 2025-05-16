@@ -1,10 +1,11 @@
-package com.chuppch.domain.trade.service;
+package com.chuppch.domain.trade.service.lock;
 
 import com.chuppch.domain.trade.adapter.repository.ITradeRepository;
 import com.chuppch.domain.trade.model.aggregate.GroupBuyOrderAggregate;
 import com.chuppch.domain.trade.model.entity.*;
 import com.chuppch.domain.trade.model.valobj.GroupBuyProgressVO;
-import com.chuppch.domain.trade.service.factory.TradeRuleFilterFactory;
+import com.chuppch.domain.trade.service.ITradeLockOrderService;
+import com.chuppch.domain.trade.service.lock.factory.TradeLockRuleFilterFactory;
 import com.chuppch.types.design.framework.link.model2.chain.BusinessLinkedList;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -18,13 +19,13 @@ import javax.annotation.Resource;
  */
 @Service
 @Slf4j
-public class TradeOrderService implements ITradeOrderService {
+public class TradeOrderService implements ITradeLockOrderService {
 
     @Resource
     private ITradeRepository repository;
 
     @Resource
-    private BusinessLinkedList<TradeRuleCommandEntity, TradeRuleFilterFactory.DynamicContext, TradeRuleFilterBackEntity> tradeRuleFilter;
+    private BusinessLinkedList<TradeRuleCommandEntity, TradeLockRuleFilterFactory.DynamicContext, TradeRuleFilterBackEntity> tradeRuleFilter;
 
     @Override
     public MarketPayOrderEntity queryNoPayMarketPayOrderByOutTradeNo(String userId, String outTradeNo) {
@@ -46,7 +47,7 @@ public class TradeOrderService implements ITradeOrderService {
                         .activityId(payActivityEntity.getActivityId())
                         .userId(userEntity.getUserId())
                         .build(),
-                new TradeRuleFilterFactory.DynamicContext());
+                new TradeLockRuleFilterFactory.DynamicContext());
 
         // 已参与拼团量 - 用于构建数据库唯一索引使用，确保用户只能在一个活动上参与固定的次数
         Integer userTakeOrderCount = tradeRuleFilterBackEntity.getUserTakeOrderCount();
