@@ -1,7 +1,11 @@
 package com.chuppch.infrastructure.dcc;
 
 import com.chuppch.types.annotations.DCCValue;
+import com.chuppch.types.common.Constants;
 import org.springframework.stereotype.Service;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author chuppch
@@ -17,6 +21,9 @@ public class DCCService {
 
     @DCCValue("cutRange:100")
     private String cutRange;
+
+    @DCCValue("scBlacklist:s02c02")
+    private String scBlacklist;
 
     //定义 降级 and 切量 两个判断
     public boolean isDowngradeSwitch() {
@@ -38,5 +45,12 @@ public class DCCService {
         return false;
     }
 
+    /**
+     * 判断黑名单拦截渠道，true 拦截、false 放行
+     */
+    public boolean isSCBlackIntercept(String source, String channel) {
+        List<String> list = Arrays.asList(scBlacklist.split(Constants.SPLIT));
+        return list.contains(source + channel);
+    }
 
 }
