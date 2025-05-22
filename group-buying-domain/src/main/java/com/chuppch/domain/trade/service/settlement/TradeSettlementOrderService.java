@@ -99,15 +99,14 @@ public class TradeSettlementOrderService implements ITradeSettlementOrderService
     }
 
     private Map<String, Integer> execSettlementNotifyJob(List<NotifyTaskEntity> notifyTaskEntityList) throws Exception {
-        // todo 看notifyTaskEntityList
         int successCount = 0, errorCount = 0, retryCount = 0;
         for (NotifyTaskEntity notifyTask : notifyTaskEntityList) {
             // 回调处理 success 成功，error 失败
-            String response = port.groupBuyNotify(notifyTask); // TODO temp 进行发送
+            String response = port.groupBuyNotify(notifyTask);
 
             // 更新状态判断&变更数据库表回调任务状态
-            if (NotifyTaskHTTPEnumVO.SUCCESS.getCode().equals(response)) { // TODO 添加监视 看一下啊response是什么
-                int updateCount = repository.updateNotifyTaskStatusSuccess(notifyTask.getTeamId());// TODO temp 更新该任务在数据库中的状态为“已完成”
+            if (NotifyTaskHTTPEnumVO.SUCCESS.getCode().equals(response)) {
+                int updateCount = repository.updateNotifyTaskStatusSuccess(notifyTask.getTeamId());
                 if (1 == updateCount) {
                     successCount += 1;
                 }
