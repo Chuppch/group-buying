@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * @author Chuppch
+ * @author chuppch
  * @description 用户拼单
  * @create 2025-04-24
  */
@@ -47,6 +47,8 @@ public class GroupBuyOrder {
     private Date validStartTime;
     /** 拼团结束时间 - 拼团有效时长 */
     private Date validEndTime;
+    /** 回调通知地址 */
+    private String notifyUrl;
     /** 创建时间 */
     private Date createTime;
     /** 更新时间 */

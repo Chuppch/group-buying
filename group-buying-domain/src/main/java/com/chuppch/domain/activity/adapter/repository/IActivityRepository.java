@@ -4,6 +4,9 @@ package com.chuppch.domain.activity.adapter.repository;
 import com.chuppch.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 import com.chuppch.domain.activity.model.valobj.SCSkuActivityVO;
 import com.chuppch.domain.activity.model.valobj.SkuVO;
+import com.chuppch.domain.trade.model.entity.NotifyTaskEntity;
+
+import java.util.List;
 
 /**
  * @author chuppch

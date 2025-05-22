@@ -2,6 +2,11 @@ package com.chuppch.api.dto;
 
 import lombok.Data;
 
+/**
+ * @author chuppch
+ * @description 营销支付锁单请求对象
+ * @create 2025-05-22
+ */
 @Data
 public class LockMarketPayOrderRequestDTO {
 
@@ -19,5 +24,7 @@ public class LockMarketPayOrderRequestDTO {
     private String channel;
     // 外部交易单号
     private String outTradeNo;
+    // 回调地址
+    private String notifyUrl;
 
 }

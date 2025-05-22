@@ -5,6 +5,7 @@ import com.chuppch.domain.activity.model.valobj.DiscountTypeEnum;
 import com.chuppch.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 import com.chuppch.domain.activity.model.valobj.SCSkuActivityVO;
 import com.chuppch.domain.activity.model.valobj.SkuVO;
+import com.chuppch.domain.trade.model.entity.NotifyTaskEntity;
 import com.chuppch.infrastructure.dao.IGroupBuyActivityDao;
 import com.chuppch.infrastructure.dao.IGroupBuyDiscountDao;
 import com.chuppch.infrastructure.dao.ISCSkuActivityDao;
@@ -19,6 +20,7 @@ import org.redisson.api.RBitSet;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author chuppch
@@ -128,4 +130,5 @@ public class ActivityRepository implements IActivityRepository {
     public boolean cutRange(String userId) {
         return dccService.isCutRange(userId);
     }
+
 }

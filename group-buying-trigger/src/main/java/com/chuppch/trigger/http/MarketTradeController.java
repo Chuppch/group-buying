@@ -24,6 +24,11 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import java.util.Objects;
 
+/**
+ * @author chuppch
+ * @description 营销交易服务
+ * @create 2025-05-22
+ */
 @Slf4j
 @RestController
 @CrossOrigin("*")
@@ -48,12 +53,13 @@ public class MarketTradeController implements IMarketTradeService {
             String channel = lockMarketPayOrderRequestDTO.getChannel();
             String outTradeNo = lockMarketPayOrderRequestDTO.getOutTradeNo();
             String teamId = lockMarketPayOrderRequestDTO.getTeamId();
+            String notifyUrl = lockMarketPayOrderRequestDTO.getNotifyUrl();
 
 
             log.info("营销交易锁单:{} lockMarketPayOrderRequestDTO:{}", userId, JSON.toJSONString(lockMarketPayOrderRequestDTO));
 
             //判断传参是否为空
-            if (StringUtils.isBlank(userId) || StringUtils.isBlank(goodsId) || StringUtils.isBlank(source) || StringUtils.isBlank(channel) || null == activityId) {
+            if (StringUtils.isBlank(userId) || StringUtils.isBlank(source) || StringUtils.isBlank(channel) || StringUtils.isBlank(goodsId) || StringUtils.isBlank(goodsId) || null == activityId || StringUtils.isBlank(notifyUrl)) {
                 return Response.<LockMarketPayOrderResponseDTO>builder()
                         //如果有值为空，则返回 存在非法参数
                         .code(ResponseCode.ILLEGAL_PARAMETER.getCode())
@@ -124,6 +130,7 @@ public class MarketTradeController implements IMarketTradeService {
                             .deductionPrice(trialBalanceEntity.getDeductionPrice())
                             .payPrice(trialBalanceEntity.getPayPrice())
                             .outTradeNo(outTradeNo)
+                            .notifyUrl(notifyUrl)
                             .build());
 
             log.info("交易锁单记录(新):{} marketPayOrderEntity:{}", userId, JSON.toJSONString(marketPayOrderEntity));

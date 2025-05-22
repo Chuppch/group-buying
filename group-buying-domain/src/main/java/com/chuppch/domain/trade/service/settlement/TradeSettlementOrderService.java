@@ -1,23 +1,35 @@
 package com.chuppch.domain.trade.service.settlement;
 
+import com.chuppch.domain.tag.adapter.port.ITradePort;
 import com.chuppch.domain.trade.adapter.repository.ITradeRepository;
 import com.chuppch.domain.trade.model.aggregate.GroupBuyTeamSettlementAggregate;
 import com.chuppch.domain.trade.model.entity.*;
 import com.chuppch.domain.trade.service.ITradeSettlementOrderService;
 import com.chuppch.domain.trade.service.settlement.factory.TradeSettlementRuleFilterFactory;
 import com.chuppch.types.design.framework.link.model2.chain.BusinessLinkedList;
+import com.chuppch.types.enums.NotifyTaskHTTPEnumVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.RegEx;
 import javax.annotation.Resource;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
+/**
+ * @author chuppch
+ * @description 拼团交易结算服务
+ * @create 2025-05-22
+ */
 @Slf4j
 @Service
 public class TradeSettlementOrderService implements ITradeSettlementOrderService {
 
     @Resource
     private ITradeRepository repository;
+    @Resource
+    private ITradePort port;
+
     @Resource
     private BusinessLinkedList<TradeSettlementRuleCommandEntity, TradeSettlementRuleFilterFactory.DynamicContext, TradeSettlementRuleFilterBackEntity> tradeSettlementRuleFilter;
 
@@ -47,6 +59,7 @@ public class TradeSettlementOrderService implements ITradeSettlementOrderService
                 .status(tradeSettlementRuleFilterBackEntity.getStatus())
                 .validStartTime(tradeSettlementRuleFilterBackEntity.getValidStartTime())
                 .validEndTime(tradeSettlementRuleFilterBackEntity.getValidEndTime())
+                .notifyUrl(tradeSettlementRuleFilterBackEntity.getNotifyUrl())
                 .build();
 
         // 3. 构建聚合对象
@@ -70,4 +83,55 @@ public class TradeSettlementOrderService implements ITradeSettlementOrderService
                 .build();
     }
 
+    @Override
+    public Map<String, Integer> execSettlementNotifyJob() throws Exception {
+        log.info("拼团交易-执行结算通知任务");
+        // 查询未执行任务 ——— 做定时任务
+        List<NotifyTaskEntity> notifyTaskEntityList = repository.queryUnExecutedNotifyTaskList();
+        return execSettlementNotifyJob(notifyTaskEntityList);
+    }
+
+    @Override
+    public Map<String, Integer> execSettlementNotifyJob(String teamId) throws Exception {
+        log.info("拼团交易-执行结算通知回调，指定 teamId:{}", teamId);
+        List<NotifyTaskEntity> notifyTaskEntityList = repository.queryUnExecutedNotifyTaskList(teamId);
+        return execSettlementNotifyJob(notifyTaskEntityList);
+    }
+
+    private Map<String, Integer> execSettlementNotifyJob(List<NotifyTaskEntity> notifyTaskEntityList) throws Exception {
+        // todo 看notifyTaskEntityList
+        int successCount = 0, errorCount = 0, retryCount = 0;
+        for (NotifyTaskEntity notifyTask : notifyTaskEntityList) {
+            // 回调处理 success 成功，error 失败
+            String response = port.groupBuyNotify(notifyTask); // TODO temp 进行发送
+
+            // 更新状态判断&变更数据库表回调任务状态
+            if (NotifyTaskHTTPEnumVO.SUCCESS.getCode().equals(response)) { // TODO 添加监视 看一下啊response是什么
+                int updateCount = repository.updateNotifyTaskStatusSuccess(notifyTask.getTeamId());// TODO temp 更新该任务在数据库中的状态为“已完成”
+                if (1 == updateCount) {
+                    successCount += 1;
+                }
+            } else if (NotifyTaskHTTPEnumVO.ERROR.getCode().equals(response)) {
+                if (notifyTask.getNotifyCount() < 5) {
+                    int updateCount = repository.updateNotifyTaskStatusError(notifyTask.getTeamId());
+                    if (1 == updateCount) {
+                        errorCount += 1;
+                    }
+                } else {
+                    int updateCount = repository.updateNotifyTaskStatusRetry(notifyTask.getTeamId());
+                    if (1 == updateCount) {
+                        retryCount += 1;
+                    }
+                }
+            }
+        }
+
+        Map<String, Integer> resultMap = new HashMap<>();
+        resultMap.put("waitCount", notifyTaskEntityList.size());
+        resultMap.put("successCount", successCount);
+        resultMap.put("errorCount", errorCount);
+        resultMap.put("retryCount", retryCount);
+
+        return resultMap;
+    }
 }

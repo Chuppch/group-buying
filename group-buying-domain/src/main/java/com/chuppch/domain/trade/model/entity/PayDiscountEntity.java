@@ -7,6 +7,11 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
+/**
+ * @author chuppch
+ * @description 拼团，支付优惠实体对象
+ * @create 2025-05-22
+ */
 @Data
 @Builder
 @AllArgsConstructor
@@ -29,5 +34,6 @@ public class PayDiscountEntity {
     private BigDecimal payPrice;
     /** 外部交易单号-确保外部调用唯一幂等 */
     private String outTradeNo;
-
+    /** 回调地址 */
+    private String notifyUrl;
 }
