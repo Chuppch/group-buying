@@ -1,0 +1,1310 @@
+25-05-22.16:11:20.238 [main            ] INFO  Application            - Starting Application using Java 17.0.12 on xiaoheng with PID 16632 (D:\MyTempCode\group_buy_market\group-buying\group-buying-app\target\classes started by 73272 in D:\MyTempCode\group_buy_market\group-buying)
+25-05-22.16:11:20.241 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-05-22.16:11:21.171 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-05-22.16:11:21.174 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-05-22.16:11:21.225 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
+25-05-22.16:11:21.501 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.chuppch.config.RedisClientConfig$$EnhancerBySpringCGLIB$$a85ffa9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-05-22.16:11:21.800 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.chuppch.config.RedisClientConfigProperties' of type [com.chuppch.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-05-22.16:11:21.985 [main            ] INFO  Version                - Redisson 3.26.0
+25-05-22.16:11:22.256 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 172.28.76.198/172.28.76.198:16379
+25-05-22.16:11:22.276 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 172.28.76.198/172.28.76.198:16379
+25-05-22.16:11:22.309 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-05-22.16:11:22.548 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-05-22.16:11:22.556 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-05-22.16:11:22.556 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-05-22.16:11:22.556 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-05-22.16:11:22.640 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-05-22.16:11:22.640 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2345 ms
+25-05-22.16:11:23.956 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-05-22.16:11:23.978 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-05-22.16:11:23.990 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-05-22.16:11:24.003 [main            ] INFO  Application            - Started Application in 4.297 seconds (JVM running for 4.954)
+25-05-22.16:11:24.061 [RMI TCP Connection(1)-172.20.10.2] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-05-22.16:11:24.074 [RMI TCP Connection(4)-172.20.10.2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-05-22.16:11:24.074 [RMI TCP Connection(4)-172.20.10.2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-05-22.16:11:24.075 [RMI TCP Connection(4)-172.20.10.2] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-05-22.16:11:24.340 [RMI TCP Connection(1)-172.20.10.2] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-05-22.16:11:25.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:11:25.181 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:11:30.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:11:30.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:11:35.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:11:35.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:11:40.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:11:40.004 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:11:45.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:11:45.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:11:50.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:11:50.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:11:55.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:11:55.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:12:00.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:12:00.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:12:05.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:12:05.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:12:10.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:12:10.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:12:15.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:12:15.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:12:20.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:12:20.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:12:25.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:12:25.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:12:30.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:12:30.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:12:35.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:12:35.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:12:40.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:12:40.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:12:45.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:12:45.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:12:50.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:12:50.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:12:55.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:12:55.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:13:00.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:13:00.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:13:05.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:13:05.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:13:10.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:13:10.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:13:15.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:13:15.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:13:20.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:13:20.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:13:25.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:13:25.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:13:30.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:13:30.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:13:35.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:13:35.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:13:40.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:13:40.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:13:45.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:13:45.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:13:50.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:13:50.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:13:55.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:13:55.049 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:14:00.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:14:00.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:14:05.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:14:05.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:14:10.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:14:10.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:14:15.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:14:15.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:14:20.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:14:20.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:14:25.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:14:25.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:14:30.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:14:30.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:14:35.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:14:35.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:14:40.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:14:40.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:14:45.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:14:45.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:14:50.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:14:50.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:14:55.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:14:55.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:15:00.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:15:00.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:15:05.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:15:05.022 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:15:10.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:15:10.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:15:15.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:15:15.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:15:20.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:15:20.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:15:25.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:15:25.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:15:30.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:15:30.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:15:35.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:15:35.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:15:40.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:15:40.026 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:15:45.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:15:45.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:15:50.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:15:50.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:15:55.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:15:55.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:16:00.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:16:00.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:16:05.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:16:05.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:16:10.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:16:10.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:16:15.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:16:15.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:16:20.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:16:20.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:16:25.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:16:25.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:16:30.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:16:30.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:16:35.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:16:35.022 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:16:40.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:16:40.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:16:45.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:16:45.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:16:50.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:16:50.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:16:55.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:16:55.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:17:00.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:17:00.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:17:05.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:17:05.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:17:10.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:17:10.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:17:15.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:17:15.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:17:20.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:17:20.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:17:25.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:17:25.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:17:30.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:17:30.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:17:35.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:17:35.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:17:40.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:17:40.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:17:45.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:17:45.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:17:50.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:17:50.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:17:55.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:17:55.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:18:00.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:18:00.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:18:05.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:18:05.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:18:10.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:18:10.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:18:15.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:18:15.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:18:20.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:18:20.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:18:25.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:18:25.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:18:30.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:18:30.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:18:35.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:18:35.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:18:40.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:18:40.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:18:45.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:18:45.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:18:50.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:18:50.023 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:18:55.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:18:55.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:19:00.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:19:00.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:19:05.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:19:05.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:19:10.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:19:10.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:19:15.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:19:15.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:19:20.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:19:20.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:19:25.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:19:25.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:19:30.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:19:30.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:19:35.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:19:35.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:19:40.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:19:40.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:19:45.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:19:45.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:19:50.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:19:50.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:19:55.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:19:55.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:20:00.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:20:00.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:20:05.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:20:05.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:20:10.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:20:10.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:20:15.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:20:15.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:20:20.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:20:20.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:20:25.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:20:25.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:20:30.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:20:30.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:20:35.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:20:35.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:20:40.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:20:40.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:20:45.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:20:45.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:20:50.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:20:50.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:20:55.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:20:55.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:21:00.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:21:00.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:21:05.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:21:05.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:21:10.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:21:10.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:21:15.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:21:15.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:21:20.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:21:20.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:21:25.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:21:25.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:21:30.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:21:30.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:21:35.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:21:35.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:21:40.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:21:40.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:21:45.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:21:45.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:21:50.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:21:50.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:21:55.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:21:55.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:22:00.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:22:00.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:22:05.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:22:05.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:22:10.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:22:10.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:22:15.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:22:15.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:22:20.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:22:20.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:22:25.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:22:25.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:22:30.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:22:30.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:22:35.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:22:35.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:22:40.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:22:40.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:22:45.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:22:45.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:22:50.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:22:50.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:22:55.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:22:55.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:23:00.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:23:00.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:23:05.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:23:05.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:23:10.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:23:10.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:23:15.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:23:15.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:23:20.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:23:20.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:23:25.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:23:25.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:23:30.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:23:30.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:23:35.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:23:35.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:23:40.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:23:40.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:23:45.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:23:45.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:23:50.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:23:50.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:23:55.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:23:55.004 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:24:00.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:24:00.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:24:05.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:24:05.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:24:10.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:24:10.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:24:15.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:24:15.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:24:20.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:24:20.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:24:25.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:24:25.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:24:30.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:24:30.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:24:35.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:24:35.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:24:40.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:24:40.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:24:45.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:24:45.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:24:50.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:24:50.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:24:55.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:24:55.002 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:25:00.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:25:00.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:25:05.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:25:05.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:25:10.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:25:10.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:25:15.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:25:15.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:25:20.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:25:20.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:25:25.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:25:25.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:25:30.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:25:30.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:25:35.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:25:35.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:25:40.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:25:40.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:25:45.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:25:45.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:25:50.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:25:50.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:25:55.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:25:55.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:26:00.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:26:00.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:26:05.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:26:05.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:26:10.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:26:10.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:26:15.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:26:15.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:26:20.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:26:20.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:26:25.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:26:25.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:26:30.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:26:30.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:26:35.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:26:35.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:26:40.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:26:40.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:26:45.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:26:45.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:26:50.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:26:50.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:26:55.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:26:55.004 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:27:00.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:27:00.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:27:05.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:27:05.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:27:10.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:27:10.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:27:15.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:27:15.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:27:20.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:27:20.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:27:25.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:27:25.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:27:30.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:27:30.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:27:35.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:27:35.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:27:40.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:27:40.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:27:45.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:27:45.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:27:50.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:27:50.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:27:55.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:27:55.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:28:00.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:28:00.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:28:05.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:28:05.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:28:10.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:28:10.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:28:15.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:28:15.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:28:20.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:28:20.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:28:25.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:28:25.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:28:30.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:28:30.058 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":1,"waitCount":1,"errorCount":0}
+25-05-22.16:28:35.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:28:35.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:28:40.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:28:40.004 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:28:45.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:28:45.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:28:50.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:28:50.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:28:55.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:28:55.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:29:00.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:29:00.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:29:05.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:29:05.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:29:10.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:29:10.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:29:15.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:29:15.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:29:20.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:29:20.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:29:25.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:29:25.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:29:30.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:29:30.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:29:35.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:29:35.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:29:40.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:29:40.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:29:45.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:29:45.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:29:50.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:29:50.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:29:55.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:29:55.004 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:30:00.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:30:00.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:30:05.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:30:05.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:30:10.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:30:10.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:30:15.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:30:15.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:30:20.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:30:20.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:30:25.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:30:25.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:30:30.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:30:30.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:30:35.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:30:35.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:30:40.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:30:40.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:30:45.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:30:45.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:30:50.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:30:50.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:30:55.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:30:55.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:31:00.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:31:00.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:31:05.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:31:05.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:31:10.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:31:10.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:31:15.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:31:15.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:31:20.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:31:20.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:31:25.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:31:25.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:31:30.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:31:30.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:31:35.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:31:35.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:31:40.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:31:40.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:31:45.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:31:45.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:31:50.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:31:50.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:31:55.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:31:55.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:32:00.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:32:00.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:32:05.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:32:05.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:32:10.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:32:10.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:32:15.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:32:15.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:32:20.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:32:20.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:32:25.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:32:25.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:32:30.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:32:30.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:32:35.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:32:35.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:32:40.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:32:40.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:32:45.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:32:45.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:32:50.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:32:50.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:32:55.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:32:55.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:33:00.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:33:00.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:33:05.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:33:05.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:33:10.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:33:10.002 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:33:15.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:33:15.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:33:20.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:33:20.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:33:25.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:33:25.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:33:30.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:33:30.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:33:35.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:33:35.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:33:40.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:33:40.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:33:45.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:33:45.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:33:50.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:33:50.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:33:55.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:33:55.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:34:00.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:34:00.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:34:05.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:34:05.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:34:10.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:34:10.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:34:15.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:34:15.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:34:20.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:34:20.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:34:25.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:34:25.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:34:30.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:34:30.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:34:35.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:34:35.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:34:40.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:34:40.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:34:45.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:34:45.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:34:50.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:34:50.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:34:55.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:34:55.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:35:00.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:35:00.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:35:05.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:35:05.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:35:10.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:35:10.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:35:15.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:35:15.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:35:20.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:35:20.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:35:25.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:35:25.022 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:35:30.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:35:30.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:35:35.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:35:35.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:35:40.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:35:40.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:35:45.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:35:45.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:35:50.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:35:50.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:35:55.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:35:55.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:36:00.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:36:00.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:36:05.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:36:05.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:36:10.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:36:10.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:36:15.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:36:15.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:36:20.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:36:20.022 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:36:25.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:36:25.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:36:30.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:36:30.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:36:35.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:36:35.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:36:40.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:36:40.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:36:45.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:36:45.022 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:36:50.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:36:50.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:36:55.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:36:55.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:37:00.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:37:00.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:37:05.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:37:05.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:37:10.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:37:10.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:37:15.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:37:15.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:37:19.630 [RMI TCP Accept-0] WARN  tcp                    - RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=41005] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at jdk.management.agent/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:413)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-05-22.16:37:19.644 [RMI TCP Accept-0] WARN  tcp                    - RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=41005] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at jdk.management.agent/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:413)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-05-22.16:37:20.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:37:20.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:37:25.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:37:25.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:37:30.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:37:30.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:37:35.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:37:35.022 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:37:40.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:37:40.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:37:45.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:37:45.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:37:50.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:37:50.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:37:55.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:37:55.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:38:00.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:38:00.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:38:05.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:38:05.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:38:10.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:38:10.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:38:15.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:38:15.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:38:20.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:38:20.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:38:25.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:38:25.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:38:30.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:38:30.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:38:35.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:38:35.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:38:40.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:38:40.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:38:45.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:38:45.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:38:50.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:38:50.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:38:55.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:38:55.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:39:00.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:39:00.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:39:05.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:39:05.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:39:10.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:39:10.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:39:15.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:39:15.023 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:39:20.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:39:20.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:39:25.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:39:25.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:39:30.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:39:30.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:39:35.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:39:35.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:39:40.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:39:40.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:39:45.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:39:45.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:39:50.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:39:50.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:39:55.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:39:55.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:40:00.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:40:00.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:40:05.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:40:05.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:40:10.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:40:10.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:40:15.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:40:15.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:40:20.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:40:20.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:40:25.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:40:25.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:40:30.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:40:30.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:40:35.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:40:35.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:40:40.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:40:40.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:40:45.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:40:45.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:40:50.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:40:50.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:40:55.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:40:55.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:41:00.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:41:00.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:41:05.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:41:05.004 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:41:10.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:41:10.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:41:15.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:41:15.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:41:20.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:41:20.023 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:41:24.111 [RMI TCP Accept-0] WARN  tcp                    - RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=41005] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at jdk.management.agent/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:413)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-05-22.16:41:24.121 [RMI TCP Accept-0] WARN  tcp                    - RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=41005] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at jdk.management.agent/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:413)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-05-22.16:41:25.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:41:25.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:41:25.135 [RMI TCP Accept-0] WARN  tcp                    - RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=41005] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at jdk.management.agent/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:413)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-05-22.16:41:27.148 [RMI TCP Accept-0] WARN  tcp                    - RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=41005] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at jdk.management.agent/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:413)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-05-22.16:41:30.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:41:30.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:41:31.167 [RMI TCP Accept-0] WARN  tcp                    - RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=41005] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at jdk.management.agent/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:413)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-05-22.16:41:35.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:41:35.003 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:41:39.177 [RMI TCP Accept-0] WARN  tcp                    - RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=41005] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at jdk.management.agent/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:413)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-05-22.16:41:40.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:41:40.023 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:41:45.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:41:45.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:41:50.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:41:50.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:41:55.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:41:55.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:41:55.199 [RMI TCP Accept-0] WARN  tcp                    - RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=41005] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at jdk.management.agent/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:413)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-05-22.16:42:00.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:42:00.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:42:05.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:42:05.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:42:10.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:42:10.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:42:15.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:42:15.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:42:20.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:42:20.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:42:25.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:42:25.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:42:27.211 [RMI TCP Accept-0] WARN  tcp                    - RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=41005] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at jdk.management.agent/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:413)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-05-22.16:42:30.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:42:30.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:42:35.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:42:35.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:42:40.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:42:40.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:42:45.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:42:45.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:42:50.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:42:50.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:42:55.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:42:55.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:43:00.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:43:00.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:43:05.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:43:05.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:43:10.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:43:10.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:43:15.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:43:15.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:43:20.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:43:20.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:43:25.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:43:25.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:43:30.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:43:30.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:43:31.240 [RMI TCP Accept-0] WARN  tcp                    - RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=41005] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at jdk.management.agent/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:413)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-05-22.16:43:35.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:43:35.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:43:40.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:43:40.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:43:45.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:43:45.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:43:50.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:43:50.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:43:55.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:43:55.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:44:00.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:44:00.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:44:05.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:44:05.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:44:10.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:44:10.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:44:15.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:44:15.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:44:20.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:44:20.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:44:25.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:44:25.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:44:30.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:44:30.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:44:35.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:44:35.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:44:40.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:44:40.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:44:45.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:44:45.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:44:50.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:44:50.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:44:55.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:44:55.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:45:00.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:45:00.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:45:05.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:45:05.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:45:10.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:45:10.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:45:15.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:45:15.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:45:20.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:45:20.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:45:25.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:45:25.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:45:30.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:45:30.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:45:35.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:45:35.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:45:39.260 [RMI TCP Accept-0] WARN  tcp                    - RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=41005] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at jdk.management.agent/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:413)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-05-22.16:45:40.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:45:40.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:45:45.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:45:45.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:45:50.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:45:50.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:45:55.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:45:55.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:46:00.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:46:00.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:46:05.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:46:05.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:46:10.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:46:10.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:46:15.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:46:15.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:46:20.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:46:20.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:46:25.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:46:25.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:46:30.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:46:30.023 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:46:35.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:46:35.022 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:46:40.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:46:40.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:46:45.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:46:45.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:46:50.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:46:50.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:46:55.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:46:55.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:47:00.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:47:00.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:47:05.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:47:05.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:47:10.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:47:10.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:47:15.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:47:15.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:47:20.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:47:20.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:47:25.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:47:25.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:47:30.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:47:30.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:47:35.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:47:35.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:47:40.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:47:40.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:47:45.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:47:45.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:47:50.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:47:50.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:47:55.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:47:55.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:48:00.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:48:00.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:48:05.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:48:05.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:48:10.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:48:10.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:48:15.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:48:15.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:48:20.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:48:20.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:48:25.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:48:25.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:48:30.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:48:30.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:48:35.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:48:35.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:48:40.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:48:40.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:48:45.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:48:45.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:48:50.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:48:50.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:48:55.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:48:55.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:49:00.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:49:00.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:49:05.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:49:05.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:49:10.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:49:10.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:49:15.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:49:15.022 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:49:20.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:49:20.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:49:25.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:49:25.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:49:30.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:49:30.023 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:49:35.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:49:35.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:49:40.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:49:40.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:49:45.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:49:45.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:49:50.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:49:50.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:49:55.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:49:55.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:49:55.279 [RMI TCP Accept-0] WARN  tcp                    - RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=41005] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at jdk.management.agent/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:413)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-05-22.16:50:00.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:50:00.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:50:05.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:50:05.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:50:10.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:50:10.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:50:15.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:50:15.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:50:20.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:50:20.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:50:25.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:50:25.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:50:30.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:50:30.022 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:50:35.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:50:35.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:50:40.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:50:40.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:50:45.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:50:45.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:50:50.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:50:50.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:50:55.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:50:55.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:51:00.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:51:00.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:51:05.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:51:05.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:51:10.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:51:10.022 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:51:15.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:51:15.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:51:20.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:51:20.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:51:25.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:51:25.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:51:30.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:51:30.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:51:35.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:51:35.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:51:40.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:51:40.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:51:45.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:51:45.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:51:50.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:51:50.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:51:55.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:51:55.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:52:00.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:52:00.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:52:05.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:52:05.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:52:10.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:52:10.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:52:15.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:52:15.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:52:20.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:52:20.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:52:25.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:52:25.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:52:30.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:52:30.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:52:35.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:52:35.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:52:40.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:52:40.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:52:45.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:52:45.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:52:50.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:52:50.004 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:52:55.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:52:55.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:53:00.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:53:00.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:53:05.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:53:05.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:53:10.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:53:10.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:53:15.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:53:15.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:53:20.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:53:20.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:53:25.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:53:25.022 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:53:30.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:53:30.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:53:35.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:53:35.023 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:53:40.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:53:40.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:53:45.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:53:45.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:53:50.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:53:50.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:53:55.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:53:55.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:54:00.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:54:00.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:54:05.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:54:05.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:54:10.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:54:10.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:54:15.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:54:15.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:54:20.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:54:20.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:54:25.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:54:25.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:54:30.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:54:30.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:54:35.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:54:35.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:54:40.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:54:40.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:54:45.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:54:45.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:54:50.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:54:50.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:54:55.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:54:55.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:55:00.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:55:00.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:55:05.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:55:05.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:55:10.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:55:10.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:55:15.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:55:15.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:55:20.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:55:20.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:55:25.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:55:25.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:55:30.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:55:30.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:55:35.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:55:35.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:55:40.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:55:40.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:55:45.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:55:45.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:55:50.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:55:50.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:55:55.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:55:55.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:56:00.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:56:00.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:56:05.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:56:05.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:56:10.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:56:10.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:56:15.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:56:15.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:56:20.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:56:20.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:56:25.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:56:25.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:56:30.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:56:30.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:56:35.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:56:35.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:56:40.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:56:40.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:56:45.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:56:45.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:56:50.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:56:50.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:56:55.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:56:55.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:57:00.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:57:00.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:57:05.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:57:05.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:57:10.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:57:10.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:57:15.017 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:57:15.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:57:20.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:57:20.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:57:25.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:57:25.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:57:30.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:57:30.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:57:35.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:57:35.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:57:39.972 [http-nio-8091-exec-1] INFO  TestApiClientController - 模拟测试第三方服务接收拼团回调 {"outTradeNoList":["038426231487","652896391719","619401409195"],"teamId":"57199993"}
+25-05-22.16:57:40.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:57:40.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:57:45.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:57:45.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:57:50.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:57:50.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:57:55.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:57:55.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:58:00.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:58:00.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:58:05.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:58:05.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:58:10.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:58:10.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:58:15.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:58:15.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:58:20.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:58:20.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:58:25.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:58:25.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:58:30.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:58:30.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:58:35.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:58:35.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:58:38.363 [http-nio-8091-exec-3] INFO  TestApiClientController - 模拟测试第三方服务接收拼团回调 {"outTradeNoList":["038426231487","652896391719","619401409195"],"teamId":"57198893"}
+25-05-22.16:58:40.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:58:40.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:58:45.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:58:45.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:58:50.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:58:50.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:58:55.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:58:55.004 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:59:00.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:59:00.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:59:05.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:59:05.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:59:10.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:59:10.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:59:15.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:59:15.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:59:20.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:59:20.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:59:25.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:59:25.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:59:30.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:59:30.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:59:35.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:59:35.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:59:40.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:59:40.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:59:45.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:59:45.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:59:50.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:59:50.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.16:59:55.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.16:59:55.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:00:00.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:00:00.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:00:05.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:00:05.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:00:10.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:00:10.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:00:15.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:00:15.022 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:00:15.370 [http-nio-8091-exec-5] INFO  TestApiClientController - 模拟测试第三方服务接收拼团回调 {"outTradeNoList":["038426231487","652896391719","619401409195"],"teamId":"57198893"}
+25-05-22.17:00:20.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:00:20.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:00:25.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:00:25.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:00:30.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:00:30.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:00:35.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:00:35.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:00:40.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:00:40.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:00:45.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:00:45.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:00:50.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:00:50.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:00:52.640 [http-nio-8091-exec-7] INFO  TestApiClientController - 模拟测试第三方服务接收拼团回调 {"outTradeNoList":["038426231487","652896391719","619401409195"],"teamId":"57198893"}
+25-05-22.17:00:55.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:00:55.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:01:00.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:01:00.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:01:05.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:01:05.022 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:01:10.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:01:10.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:01:15.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:01:15.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:01:20.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+25-05-22.17:01:20.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{"retryCount":0,"successCount":0,"waitCount":0,"errorCount":0}
+25-05-22.17:01:24.837 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-05-22.17:01:24.851 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
