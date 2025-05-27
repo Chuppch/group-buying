@@ -14,7 +14,7 @@
 - 🧠 **DDD 领域建模**：活动域、人群域、交易域解耦清晰
 - 🧩 **通用设计模式抽象**：责任链 + 规则树，替代繁杂 if...else 分支
 - ⛓ **高并发友好**：异步解耦、无锁库存增强系统韧性
-- 📦 **全栈式开发**：前后端 + DevOps 一体化，涵盖页面、接口、配置、监控
+- 📦 **全栈式开发**：前后端 + DevOps 一体化，涵盖页面、接口、配置
 - 🧱 **高扩展性**：模块化插件式架构，便于功能拆卸和新业务接入
 
 ------
@@ -37,18 +37,18 @@
 
 ## 🛠 技术栈
 
-| 层级       | 技术                                          |
-| ---------- | --------------------------------------------- |
-| 微服务框架 | Spring Boot、Spring Cloud                     |
-| ORM        | MyBatis                                       |
+| 层级       | 技术                                  |
+| ---------- |-------------------------------------|
+| 微服务框架 | Spring Boot、Spring Cloud            |
+| ORM        | MyBatis                             |
 | 持久化     | MySQL、Redis（BitMap/Cache）、MongoDB（可选） |
-| 消息队列   | RabbitMQ                                      |
-| 配置中心   | 自研 DCC / Apollo                             |
-| 分布式通信 | Feign、Retrofit2、gRPC                        |
-| 分布式锁   | Redis 锁（Lua 脚本）                          |
-| 接口调用   | OkHttp3、Feign、Nginx负载均衡                 |
-| 前端技术   | HTML、CSS、JavaScript                         |
-| 监控与运维 | Prometheus、Docker、Skywalking                |
+| 消息队列   | RabbitMQ                            |
+| 配置中心   | 自研 DCC                              |
+| 分布式通信 | Feign、Retrofit2、gRPC(待对接)           |
+| 分布式锁   | Redis 锁（Lua 脚本）                     |
+| 接口调用   | OkHttp3、Feign、Nginx负载均衡             |
+| 前端技术   | HTML、CSS、JavaScript                 |
+| 监控与运维 | Prometheus、Docker、Skywalking（待完成）   |
 
 
 
