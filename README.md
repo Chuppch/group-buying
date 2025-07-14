@@ -43,7 +43,7 @@
 | ORM        | MyBatis                             |
 | 持久化     | MySQL、Redis（BitMap/Cache）、MongoDB（可选） |
 | 消息队列   | RabbitMQ                            |
-| 配置中心   | 自研 DCC                              |
+| 配置中心   | 自研 DCC（基于Redis的订阅发布）               |
 | 分布式通信 | Feign、Retrofit2、gRPC(待对接)           |
 | 分布式锁   | Redis 锁（Lua 脚本）                     |
 | 接口调用   | OkHttp3、Feign、Nginx负载均衡             |
