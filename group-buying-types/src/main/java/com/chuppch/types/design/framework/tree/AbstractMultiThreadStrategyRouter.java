@@ -8,7 +8,7 @@ import java.util.concurrent.TimeoutException;
 
 
 /**
- * @author Fuzhengwei bugstack.cn @小傅哥
+ * @author Chuppch
  * @description 异步资源加载策略
  * @create 2025-4-16
  */

@@ -44,6 +44,21 @@ public class MarketTradeController implements IMarketTradeService {
     @Resource
     private ITradeSettlementOrderService tradeSettlementOrderService;
 
+    /**
+     * 【营销交易锁单接口】
+     * 用于用户在拼团活动中下单时锁定一笔订单（未支付），确保同一用户同一订单号不会重复下单。
+     * 主要流程包括：
+     * 1. 校验请求参数的合法性；
+     * 2. 检查该用户该订单号是否已存在未支付订单，若存在直接返回，防止重复下单；
+     * 3. 校验拼团是否已达成目标人数，若已达成则不允许继续下单；
+     * 4. 进行优惠试算，获取商品的优惠信息；
+     * 5. 校验用户是否在可参与人群范围内；
+     * 6. 正式锁定订单，生成订单记录；
+     * 7. 返回订单号、优惠金额、订单状态等信息。
+     *
+     * @param requestDTO 锁单请求参数
+     * @return 锁单结果响应
+     */
     @RequestMapping(value = "lock_market_pay_order", method = RequestMethod.POST)
     @Override
     public Response<LockMarketPayOrderResponseDTO> lockMarketPayOrder(@RequestBody LockMarketPayOrderRequestDTO requestDTO) {
@@ -174,6 +189,19 @@ public class MarketTradeController implements IMarketTradeService {
         }
     }
 
+    /**
+     * 【营销交易结算接口】
+     * 用于用户支付成功后，对拼团订单进行结算处理。
+     * 主要流程包括：
+     * 1. 校验请求参数的合法性；
+     * 2. 调用结算服务，完成订单结算（如更新订单状态、发放奖励等）；
+     * 3. 返回结算后的用户ID、团队ID、活动ID、订单号等信息。
+     *
+     * 典型场景：支付成功后由前端或支付回调服务调用，完成拼团订单的最终结算。
+     *
+     * @param requestDTO 结算请求参数
+     * @return 结算结果响应
+     */
     @RequestMapping(value = "settlement_market_pay_order", method = RequestMethod.POST)
     @Override
     public Response<SettlementMarketPayOrderResponseDTO> settlementMarketPayOrder(@RequestBody SettlementMarketPayOrderRequestDTO requestDTO) {

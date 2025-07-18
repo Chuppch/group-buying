@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 
 /**
- * @author Fuzhengwei bugstack.cn @小傅哥
+ * @author Chuppch
  * @description 折扣配置Dao
  * @create 2024-12-07 10:10
  */
