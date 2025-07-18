@@ -8,7 +8,7 @@ import java.util.concurrent.TimeoutException;
 
 
 /**
- * @author Fuzhengwei bugstack.cn @小傅哥
+ * @author Chuppch
  * @description 异步资源加载策略
  * @create 2025-4-16
  */
@@ -24,7 +24,6 @@ public abstract class AbstractMultiThreadStrategyRouter<T, D, R> implements Stra
         return defaultStrategyHandler.apply(requestParameter, dynamicContext);
     }
 
-
     @Override
     public R apply(T requestParameter, D dynamicContext) throws Exception {
         //异步加载数据
@@ -35,18 +34,11 @@ public abstract class AbstractMultiThreadStrategyRouter<T, D, R> implements Stra
 
     /**
      * 多线程加载数据
-     *
-     * @param requestParameter
-     * @param dynamicContext
      */
     protected abstract void multiTread(T requestParameter, D dynamicContext) throws ExecutionException, InterruptedException, TimeoutException;
 
     /**
      * 业务流程受理
-     *
-     * @param requestParameter
-     * @param dynamicContext
-     * @return
      */
     protected abstract R doApply(T requestParameter, D dynamicContext) throws Exception;
 }

@@ -15,7 +15,7 @@ public class BusinessLinkedList<T, D, R> extends LinkedList<ILogicHandler<T, D, 
 
 
     @Override
-// 重写 ILogicHandler 接口中的 apply 方法，实现责任链的处理逻辑。
+    // 重写 ILogicHandler 接口中的 apply 方法，实现责任链的处理逻辑。
     public R apply(T requestParameter, D dynamicContext) throws Exception {
 
         // 获取链表的第一个节点，用于遍历链表。

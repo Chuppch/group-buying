@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 
 /**
  * @author chuppch
- * @desc 首页营销服务接口测试
+ * @desc 折扣
  * @create 2025-4-17
  */
 @Slf4j
