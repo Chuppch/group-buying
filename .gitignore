@@ -39,11 +39,5 @@ build/
 .DS_Store
 
 ### log ###
-/group-buying-app/data/log/log_error.log
-/group-buying-app/data/log/log_info.log
-/group-buying-app/data/log/log-error-2025-04-15.0.log
-/group-buying-app/data/log/log-info-2025-04-15.0.log
-/group-buying-app/data/log/log-error-2025-04-17.0.log
-/group-buying-app/data/log/log-info-2025-04-17.0.log
-/data/log/log_error.log
-/data/log/log_info.log
+
+
