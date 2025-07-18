@@ -1,4 +1,0 @@
-25-05-21.17:36:57.083 [main            ] ERROR OutTradeNoRuleFilter   - 不存在的外部交易单号或用户已退单，不需要做支付订单结算:xfg03 outTradeNo:422955822226
-25-05-21.17:44:44.776 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m578ms821µs100ns).
-25-05-21.17:46:55.379 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m28s756ms224µs).
-25-05-21.17:48:13.196 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s670ms409µs500ns).
