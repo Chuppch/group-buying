@@ -63,7 +63,7 @@ public class MarketTradeController implements IMarketTradeService {
     @Override
     public Response<LockMarketPayOrderResponseDTO> lockMarketPayOrder(@RequestBody LockMarketPayOrderRequestDTO requestDTO) {
         try {
-            //参数
+            //参数校验
             String userId = requestDTO.getUserId();
             Long activityId = requestDTO.getActivityId();
             String goodsId = requestDTO.getGoodsId();
@@ -72,8 +72,6 @@ public class MarketTradeController implements IMarketTradeService {
             String outTradeNo = requestDTO.getOutTradeNo();
             String teamId = requestDTO.getTeamId();
             String notifyUrl = requestDTO.getNotifyUrl();
-
-
             log.info("营销交易锁单:{} lockMarketPayOrderRequestDTO:{}", userId, JSON.toJSONString(requestDTO));
 
             //判断传参是否为空
@@ -91,7 +89,9 @@ public class MarketTradeController implements IMarketTradeService {
                 //判断出该用户已经存在锁定的单 无需进行再进行创建 直接返回 SUCCESS 即可
                 LockMarketPayOrderResponseDTO lockMarketPayOrderResponseDTO = LockMarketPayOrderResponseDTO.builder()
                         .orderId(marketPayOrderEntity.getOrderId())
+                        .originalPrice(marketPayOrderEntity.getOriginalPrice())
                         .deductionPrice(marketPayOrderEntity.getDeductionPrice())
+                        .payPrice(marketPayOrderEntity.getPayPrice())
                         .tradeOrderStatus(marketPayOrderEntity.getTradeOrderStatusEnumVO().getCode())
                         .build();
 
@@ -105,7 +105,7 @@ public class MarketTradeController implements IMarketTradeService {
 
             //判断拼团锁单是否完成了目标
             if (StringUtils.isNoneBlank(teamId) ) {
-                //如果存在 拼团信息 判断是否锁单 锁单直接返回结果
+                //如果存在拼团信息 判断是否锁单 锁单直接返回结果
                 GroupBuyProgressVO groupBuyProgressVO = tradeOrderService.queryGroupBuyProgress(teamId);
                 if (null != groupBuyProgressVO && Objects.equals(groupBuyProgressVO.getCompleteCount(), groupBuyProgressVO.getLockCount())) {
                     log.info("交易锁单拦截-拼单目标已达成:{} {}", userId, teamId);
@@ -167,7 +167,9 @@ public class MarketTradeController implements IMarketTradeService {
                     .info(ResponseCode.SUCCESS.getInfo())
                     .data(LockMarketPayOrderResponseDTO.builder()
                             .orderId(marketPayOrderEntity.getOrderId())
+                            .originalPrice(marketPayOrderEntity.getOriginalPrice())
                             .deductionPrice(marketPayOrderEntity.getDeductionPrice())
+                            .payPrice(marketPayOrderEntity.getPayPrice())
                             .tradeOrderStatus(marketPayOrderEntity.getTradeOrderStatusEnumVO().getCode())
                             .build())
                     .build();

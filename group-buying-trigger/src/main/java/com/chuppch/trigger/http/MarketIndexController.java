@@ -41,7 +41,7 @@ public class MarketIndexController implements IMarketIndexService {
         try {
             log.info("查询商品活动配置信息");
 
-            // 参数校验 —— 防御式编程
+            // 参数校验
             if (StringUtils.isBlank(requestDTO.getUserId()) || StringUtils.isBlank(requestDTO.getSource()) || StringUtils.isBlank(requestDTO.getChannel()) || StringUtils.isBlank(requestDTO.getGoodsId())) {
                 return Response.<GoodsMarketResponseDTO>builder()
                         .code(ResponseCode.ILLEGAL_PARAMETER.getCode())

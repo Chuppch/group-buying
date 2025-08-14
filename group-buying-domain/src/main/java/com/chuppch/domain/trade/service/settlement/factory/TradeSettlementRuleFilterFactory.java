@@ -20,7 +20,6 @@ import org.springframework.stereotype.Service;
  * @description 交易结算规则过滤工厂
  * @create 2025-05-21
  */
-@Slf4j
 @Service
 public class TradeSettlementRuleFilterFactory {
 
@@ -44,7 +43,7 @@ public class TradeSettlementRuleFilterFactory {
     @Builder
     @AllArgsConstructor
     @NoArgsConstructor
-    public static class DynamicCaontext {
+    public static class DynamicContext {
         // 订单营销实体对象
         private MarketPayOrderEntity marketPayOrderEntity;
         // 拼团组队实体对象

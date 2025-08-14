@@ -11,7 +11,7 @@ public interface IMarketTradeService {
     /**
      * 营销锁单
      *
-     * @param requestDTO 锁单商品信息
+     * @param lockMarketPayOrderRequestDTO 锁单商品信息
      * @return 锁单结果信息
      */
     Response<LockMarketPayOrderResponseDTO> lockMarketPayOrder(LockMarketPayOrderRequestDTO lockMarketPayOrderRequestDTO);

@@ -21,7 +21,10 @@ public class TradeLockRuleFilterFactory {
 
 
     @Bean("tradeRuleFiter")
-    public BusinessLinkedList<TradeLockRuleCommandEntity, TradeLockRuleFilterFactory.DynamicContext, TradeLockRuleFilterBackEntity> tradeRuleFilter(ActivityUsabilityRuleFilter activityUsabilityRuleFilter, UserTakeLimitRuleFilter userTakeLimitRuleFilter) {
+    public BusinessLinkedList<TradeLockRuleCommandEntity, TradeLockRuleFilterFactory.DynamicContext, TradeLockRuleFilterBackEntity> tradeRuleFilter(
+            ActivityUsabilityRuleFilter activityUsabilityRuleFilter,
+            UserTakeLimitRuleFilter userTakeLimitRuleFilter) {
+
         //组装链
         LinkArmory<TradeLockRuleCommandEntity, TradeLockRuleFilterFactory.DynamicContext, TradeLockRuleFilterBackEntity> linkArmory =
                 new LinkArmory<>("交易规则过滤连", activityUsabilityRuleFilter, userTakeLimitRuleFilter);

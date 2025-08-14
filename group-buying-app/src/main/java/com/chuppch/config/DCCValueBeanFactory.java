@@ -39,6 +39,7 @@ public class DCCValueBeanFactory implements BeanPostProcessor {
 
     @Bean("dccTopic")
     public RTopic dccRedisTopicListener(RedissonClient redissonClient) {
+        // 订阅 group_buy_market_dcc 频道
         RTopic topic = redissonClient.getTopic("group_buy_market_dcc");
         topic.addListener(String.class, (charSequence, s) -> {
             String[] split = s.split(Constants.SPLIT);

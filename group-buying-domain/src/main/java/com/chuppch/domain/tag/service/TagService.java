@@ -27,17 +27,11 @@ public class TagService implements ITagService{
         //3.数据写入记录
         // 3. 数据写入记录
         List<String> userIdList = new ArrayList<String>() {{
-            add("xiaofuge");
-            add("liergou");
-            add("xfg01");
-            add("xfg02");
-            add("xfg03");
-            add("xfg04");
-            add("xfg05");
-            add("xfg06");
-            add("xfg07");
-            add("xfg08");
-            add("xfg09");
+            add("chuppch");
+            // add("chuppch1");
+            // add("chuppch1");
+            // add("chuppch1");
+            // 可不断拓展
         }};
 
         //4.一般人群标签的处理在公司中，会有专门的数据数仓团体通过脚本方式写入到数据库，就不哦那个这样一个一个或者批次写

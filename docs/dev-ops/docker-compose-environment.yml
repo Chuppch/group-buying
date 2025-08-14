@@ -1,6 +1,6 @@
 # 命令执行 docker-compose -f docker-compose-environment-aliyun.yml up -d
 # docker 代理和使用文档；https://bugstack.cn/md/road-map/docker.html
-#version: '3.9'
+version: '3.9'
 services:
   mysql:
     image: mysql:8.0.32
@@ -11,8 +11,9 @@ services:
       TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD: 123456
     ports:
-      - "23306:3306"
+      - "13306:3306"
     volumes:
+      - ./mysql/my.cnf:/etc/mysql/conf.d/mysql.cnf:ro
       - ./mysql/sql:/docker-entrypoint-initdb.d
     healthcheck:
       test: [ "CMD", "mysqladmin" ,"ping", "-h", "localhost" ]

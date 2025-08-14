@@ -72,7 +72,9 @@ public class TradeSettlementOrderService implements ITradeSettlementOrderService
         // 4. 拼团交易结算
         repository.settlementMarketPayOrder(groupBuyTeamSettlementAggregate);
 
-        // 5. 返回结算信息 - 公司中开发这样的流程时候，会根据外部需要进行值的设置
+        //TODO 5. 根据teamID即时发送回调任务 未完成
+
+        // 6. 返回结算信息 - 公司中开发这样的流程时候，会根据外部需要进行值的设置
         return TradePaySettlementEntity.builder()
                 .source(tradePaySuccessEntity.getSource())
                 .channel(tradePaySuccessEntity.getChannel())
