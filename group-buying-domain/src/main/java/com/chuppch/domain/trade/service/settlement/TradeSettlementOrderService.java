@@ -1,5 +1,6 @@
 package com.chuppch.domain.trade.service.settlement;
 
+import com.alibaba.fastjson.JSON;
 import com.chuppch.domain.tag.adapter.port.ITradePort;
 import com.chuppch.domain.trade.adapter.repository.ITradeRepository;
 import com.chuppch.domain.trade.model.aggregate.GroupBuyTeamSettlementAggregate;
@@ -70,9 +71,13 @@ public class TradeSettlementOrderService implements ITradeSettlementOrderService
                 .build();
 
         // 4. 拼团交易结算
-        repository.settlementMarketPayOrder(groupBuyTeamSettlementAggregate);
+        boolean isNotify = repository.settlementMarketPayOrder(groupBuyTeamSettlementAggregate);
 
-        //TODO 5. 根据teamID即时发送回调任务 未完成
+        // 5. 组队回调处理 - 处理失败也会有定时任务补偿，通过这样的方式，可以减轻任务调度，提高时效性
+        if (isNotify) {
+            Map<String, Integer> notifyResultMap = execSettlementNotifyJob(teamId);
+            log.info("回调通知拼团完结 result:{}", JSON.toJSONString(notifyResultMap));
+        }
 
         // 6. 返回结算信息 - 公司中开发这样的流程时候，会根据外部需要进行值的设置
         return TradePaySettlementEntity.builder()
